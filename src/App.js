@@ -1,4 +1,5 @@
 import './css/styles.css'
+import './plugin/bi/bootstrap-icons.css'
 
 //import components
 import Header from './components/Header';
@@ -14,9 +15,11 @@ function App() {
     <div className="App">
       <Header/>
       <HeroSection/>
+      <main>
       <AboutSection/>
       <TableSection/>
       <MapSection/>
+      </main>
       <Footer/>
     </div>
   );

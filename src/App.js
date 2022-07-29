@@ -1,5 +1,4 @@
-import logo from './logo.svg';
-import './App.css';
+import './css/styles.css'
 
 //import components
 import Header from './components/Header';

@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <div>
   <header id="header" className="header fixed-top d-flex align-items-center">
-    <div class="container d-flex align-items-center justify-content-between">
+    <div className="container d-flex align-items-center justify-content-between">
       <a href="#home" className="logo d-flex align-items-center me-auto me-lg-0">
         <img src={logo} alt="logo"/>
       </a>

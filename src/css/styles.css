@@ -573,3 +573,7 @@
 .map-popup{
     padding: 4px;
 }
+
+.MuiPaper-root{
+  padding: 0 20px;
+}

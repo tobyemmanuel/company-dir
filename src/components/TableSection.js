@@ -1,15 +1,7 @@
 import React from 'react'
 import MUIDataTable from "mui-datatables";
-import TableRow from '@mui/material/TableRow';
-import TableCell from '@mui/material/TableCell';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { CacheProvider } from '@emotion/react';
-import createCache from '@emotion/cache';
 
-const muiCache = createCache({
-  key: 'mui-datatables',
-  prepend: true,
-});
+
 const columns = [
   {
    name: "company",
@@ -64,15 +56,6 @@ const columns = [
    viewColumns: 'false'
  };
 
- const theme = createTheme({
-  overrides: {
-    MUIDataTableSelectCell: {
-      expandDisabled: {
-        visibility: 'hidden',
-      },
-    },
-  },
-});
 
 export default function TableSection({companyData}) {
 

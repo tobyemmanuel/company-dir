@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import { GoogleMap, InfoWindow, useJsApiLoader, Marker } from '@react-google-maps/api'; //load google map
-
+const GMAP_API_KEY = process.env.REACT_APP_GMAP_API_KEY;
 const containerStyle = { //ensure container size is moderate
   height: '400px'
 };
@@ -32,16 +32,18 @@ export default function MapSection({companyData}) { //receive data from app.js a
   //load google maps js API
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
-    googleMapsApiKey: "AIzaSyDinPGh24IbaLPt0aJ7FYU7Y7jgO69SNtA"
+    googleMapsApiKey: GMAP_API_KEY
   })
 
     //load and unload map
+     // eslint-disable-next-line 
   const [map, setMap] = React.useState(null)
 
   const onLoad = React.useCallback(function callback(map) {
     const bounds = new window.google.maps.LatLngBounds(center);
     map.fitBounds(bounds);
     setMap(map)
+     // eslint-disable-next-line 
   }, [])
 
   const onUnmount = React.useCallback(function callback(map) {
@@ -72,6 +74,7 @@ export default function MapSection({companyData}) { //receive data from app.js a
           //load basic parameters
             mapContainerStyle={containerStyle}
             zoom={3}
+            center = {center}
             onLoad={onLoad}
             onUnmount={onUnmount}
             onClick={() => setActiveMarker(null)}

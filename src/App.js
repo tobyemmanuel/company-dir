@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+//import styles
 import './css/styles.css'
 import './plugin/bi/bootstrap-icons.css'
 
@@ -12,17 +13,17 @@ import Footer from './components/Footer';
 
 function App() {
 
-  const [companies, getCompanies] = useState([])
-  const API = 'https://run.mocky.io/v3/7cb595ed-2882-4dc7-8179-d38d0b9c9d13';
-  const fetchCompanies = () => {
-    fetch(API)
+  const [companies, getCompanies] = useState([]) //set state for data
+  const API_URL = 'https://run.mocky.io/v3/7cb595ed-2882-4dc7-8179-d38d0b9c9d13'; //API url
+  const fetchCompanies = () => { // function to pull data from the API
+    fetch(API_URL)
       .then((res) => res.json())
       .then((res) => {
         getCompanies(res)
       })
   }
   useEffect(() => {
-    fetchCompanies()
+    fetchCompanies() //fetch the data
   }, [])
 
   return (
@@ -32,7 +33,7 @@ function App() {
       <main>
       <AboutSection/>
       <TableSection companyData = {companies}/>
-      <MapSection/>
+      <MapSection companyData = {companies}/>
       </main>
       <Footer/>
     </div>

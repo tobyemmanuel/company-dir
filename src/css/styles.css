@@ -566,3 +566,10 @@
     }
     
   }
+.map_container {
+    height: 350px;
+}
+
+.map-popup{
+    padding: 4px;
+}

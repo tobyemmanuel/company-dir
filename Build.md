@@ -10,11 +10,11 @@ run `npm fund` for details
 found ..... severity vunerablity
 run `npm audit fix` to fix them or `npm audit` for details
 
-You will also see your package-lock.json file and node_modules folder at the left side of the vscode window. 
+You will also see your package-lock.json file and node_modules folder at the left side of the vscode window.
 5. Create a `dotenv` file in the directory root. Insert the `API key` for Google MAPS. You can get your API using this link [Google Maps API](https://developers.google.com/maps/documentation/javascript/get-api-key)
 
 You should attach the key to this parameter - REACT_APP_GMAP_API_KEY. Your dotenv file should contain the following:
-    REACT_APP_GMAP_API_KEY = '<\Google Maps API>\'
+    `REACT_APP_GMAP_API_KEY = '<\Google Maps API>\'`
 run npm start on the terminal.
 
 Ensure you are in the correct directory before running the command to prevent errors. The app will open on locally on your default browser.

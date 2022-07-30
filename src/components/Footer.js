@@ -19,12 +19,12 @@ export default function Footer() {
             </div>
 
             <div className="col-lg-4 col-md-6 footer-nav d-flex">
-                <span><a href="home">Home</a></span>
-                <span><a href="about">About</a></span>
-                <span><a href="directory">Directory</a></span>
+                <span><a href="#hero">Home</a></span>
+                <span><a href="#about">About</a></span>
+                <span><a href="#directory">Directory</a></span>
             </div>
 
-            <div className="col-lg-4 col-md-6 contact-footer d-flex">
+            <div id ="contact" className="col-lg-4 col-md-6 contact-footer d-flex">
               <div>
                 <h4>Contact</h4>
                 <p>

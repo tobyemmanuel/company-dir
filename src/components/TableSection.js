@@ -53,13 +53,7 @@ const columns = [
    },
  ];
  
- const data = [
-  { name: "Joe James", company: "Test Corp", city: "Yonkers", state: "NY" },
-  { name: "John Walsh", company: "Test Corp", city: "Hartford", state: "CT" },
-  { name: "Bob Herm", company: "Test Corp", city: "Tampa", state: "FL" },
-  { name: "James Houston", company: "Test Corp", city: "Dallas", state: "TX" },
- ];
- 
+
  const options = {
    filterType: 'textField',
    download: 'false',
@@ -74,7 +68,6 @@ const columns = [
   overrides: {
     MUIDataTableSelectCell: {
       expandDisabled: {
-        // Soft hide the button.
         visibility: 'hidden',
       },
     },
@@ -100,10 +93,9 @@ export default function TableSection({companyData}) {
   })
 
 
-  console.log(newdata)
   return (
     <div>
-      <section id="table-section" className="low-padding section-bg">
+      <section id="directory" className="low-padding section-bg">
         <div className="container" data-aos="fade-up">
 
           <div className="section-header">

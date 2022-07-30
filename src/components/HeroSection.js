@@ -13,7 +13,7 @@ export default function HeroSection() {
             CompanyDir lets you do that with ease without missing your way.
           </p>
           <div className="d-flex" data-aos="fade-up" data-aos-delay="200">
-            <a href="#company-listing" className="btn-get-started">Get Started</a>
+            <a href="#map-section" className="btn-get-started">Get Started</a>
           </div>
         </div>
         <div className="col-lg-5 order-1 order-lg-2 text-lg-start text-center ">
